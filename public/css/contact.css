@@ -1,0 +1,45 @@
+.form {
+  margin-top: 16px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.btn.btn-primary {
+  background-color: #2563eb; /* biru seperti tombol "Selesai" */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+}
+
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
