@@ -8,6 +8,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Middleware\UserOnly;
 
 /*
 |--------------------------------------------------------------------------
