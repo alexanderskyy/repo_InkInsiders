@@ -1,0 +1,43 @@
+.form {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.field input,
+.field select,
+.field textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+.inline-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* lebih gelap */
+  transform: translateY(-1px);
+}
