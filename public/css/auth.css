@@ -1,0 +1,136 @@
+/* Inksiders Auth (Login/Register) */
+
+.auth{
+  min-height: calc(100vh - 140px);
+  display: grid;
+  place-items: center;
+  padding: 48px 16px;
+  background: #f6f8fb;
+}
+
+.auth-card{
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 18px 50px rgba(16, 24, 40, .12);
+  border: 1px solid rgba(2, 32, 71, .08);
+}
+
+.auth-header h1{
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b1f3a;
+}
+
+.muted{
+  margin: 0;
+  color: rgba(11, 31, 58, .65);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.auth-form{
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.field label{
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0b1f3a;
+  margin-bottom: 6px;
+}
+
+.field input{
+  width: 100%;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 31, 58, .18);
+  padding: 0 12px;
+  outline: none;
+  font-size: 14px;
+  transition: .2s ease;
+  background: #fff;
+}
+
+.field input:focus{
+  border-color: rgba(12, 94, 255, .55);
+  box-shadow: 0 0 0 4px rgba(12, 94, 255, .12);
+}
+
+.field input.is-invalid{
+  border-color: rgba(220, 38, 38, .65);
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, .10);
+}
+
+.error{
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #dc2626;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.check{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(11, 31, 58, .75);
+  user-select: none;
+}
+
+.check input{
+  width: 16px;
+  height: 16px;
+}
+
+.link{
+  font-size: 13px;
+  color: #0c5eff;
+  text-decoration: none;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.btn-primary{
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: #0c5eff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn-primary:hover{
+  filter: brightness(.95);
+  transform: translateY(-1px);
+}
+
+.w-full{
+  width: 100%;
+}
+
+.auth-foot{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: 13px;
+  color: rgba(11, 31, 58, .65);
+  padding-top: 6px;
+}
