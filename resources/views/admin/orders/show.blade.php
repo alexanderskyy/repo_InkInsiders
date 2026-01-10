@@ -139,8 +139,10 @@
                 <div class="summary-row">
                     <span class="label">Status</span>
                     <span class="value">
-                        @if($order->status === 'paid' || $order->status === 'processing')
+                        @if($order->status === 'paid')
                             <span class="badge badge-success">✓ Dibayar</span>
+                        @elseif($order->status === 'processing')
+                            <span class="badge badge-info">🔄 Diproses</span>
                         @elseif($order->status === 'pending_payment')
                             <span class="badge badge-warning">⏳ Menunggu Pembayaran</span>
                         @elseif($order->status === 'completed')
