@@ -1,0 +1,415 @@
+/* Confirmation Page Styles */
+.confirmation-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Success Animation */
+.success-animation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 3;
+    stroke: #28a745;
+    stroke-miterlimit: 10;
+}
+
+.checkmark-circle-path {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 3;
+    stroke: #28a745;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke: #28a745;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Title & Subtitle */
+.confirmation-title {
+    text-align: center;
+    color: #28a745;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.confirmation-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Cards */
+.order-summary-card,
+.shipping-card,
+.next-steps-card,
+.info-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #0052a3 0%, #0068cc 100%);
+    color: white;
+    padding: 15px 20px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* Summary Rows */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row .label {
+    color: #666;
+    font-size: 14px;
+}
+
+.summary-row .value {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+.order-number {
+    color: #0052a3 !important;
+    font-family: 'Courier New', monospace;
+}
+
+/* Total Row */
+.total-row {
+    background: #fff;
+    padding: 15px;
+    margin: 15px -25px -25px -25px;
+    border-top: 2px solid #0052a3;
+}
+
+.total-row .label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.total-amount {
+    color: #0052a3 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.badge-secondary {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Items Section */
+.items-section {
+    margin: 15px 0;
+}
+
+.items-title {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.item-row:last-child {
+    border-bottom: none;
+}
+
+.item-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.item-name {
+    color: #333;
+    font-size: 14px;
+}
+
+.item-qty {
+    color: #666;
+    font-size: 13px;
+    background: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.item-price {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Shipping Card */
+.shipping-card .card-body p {
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.shipping-card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Next Steps Card */
+.next-steps-card,
+.info-card {
+    background: #e8f5e9;
+    border: 1px solid #81c784;
+    padding: 25px;
+}
+
+.next-steps-card h3,
+.info-card h3 {
+    color: #2e7d32;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.next-steps-card ul {
+    margin-left: 20px;
+    color: #2e7d32;
+}
+
+.next-steps-card li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.info-card {
+    background: #e3f2fd;
+    border: 1px solid #64b5f6;
+}
+
+.info-card h3 {
+    color: #1565c0;
+}
+
+.info-card p {
+    color: #1565c0;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.btn {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background: white;
+    color: #0052a3;
+    border: 2px solid #0052a3;
+}
+
+.btn-primary:hover {
+    background: #003d7a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,82,163,0.3);
+    border-color: #003d7a;
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: #0052a3;
+    border: 2px solid #0052a3;
+}
+
+.btn-secondary:hover {
+    background: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,82,163,0.15);
+    border-color: #003d7a;
+    color: white;
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Print Section */
+.print-section {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-print {
+    padding: 10px 25px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-print:hover {
+    background: #5a6268;
+    transform: translateY(-1px);
+}
+
+/* Print Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .confirmation-container,
+    .confirmation-container * {
+        visibility: visible;
+    }
+    
+    .confirmation-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .action-buttons,
+    .print-section,
+    .success-animation {
+        display: none !important;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .confirmation-container {
+        margin: 20px;
+        padding: 25px;
+    }
+    
+    .confirmation-title {
+        font-size: 24px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .summary-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .item-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
