@@ -1,0 +1,9 @@
+.section ul {
+  margin-top: 16px;
+  padding-left: 18px;
+}
+
+.section li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
