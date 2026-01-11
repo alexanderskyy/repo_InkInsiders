@@ -19,7 +19,15 @@ return new class extends Migration
             $table->string('shipping_zip', 10);
             $table->string('payment_method');
             $table->decimal('total', 15, 2);
-            $table->enum('status', ['pending', 'processing', 'completed', 'cancelled'])->default('pending');
+            // ✅ PERBAIKAN: Tambah nilai 'pending_payment' dan 'paid'
+            $table->enum('status', [
+                'pending_payment',  // Status saat checkout selesai, menunggu pembayaran
+                'paid',             // Status saat sudah dibayar
+                'processing',       // Status saat admin memproses
+                'shipped',          // Status saat dikirim
+                'completed',        // Status saat selesai
+                'cancelled'         // Status saat dibatalkan
+            ])->default('pending_payment');
             $table->timestamps();
         });
     }
